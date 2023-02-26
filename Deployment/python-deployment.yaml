@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: python-app-container
-        image: gcr.io/mineral-order-375711/project-python-app
+        image: salmarefaie29/app-final-project-devops:v1.0
         ports:
         - containerPort: 8000
         envFrom:
