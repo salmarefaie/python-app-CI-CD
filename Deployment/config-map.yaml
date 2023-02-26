@@ -2,7 +2,7 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: config-map
-  namespace: default
+  namespace: app
 data:
   ENVIRONMENT: "DEV"
   HOST: "localhost"
