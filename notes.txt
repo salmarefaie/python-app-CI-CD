@@ -1,0 +1,12 @@
+BUILD IMAGE:
+    docker build -t python-app-final-project .
+    docker tag python-app-final-project salmarefaie29/python-app-final-project
+    docker push salmarefaie29/python-app-final-project
+
+
+DEPLOY:
+    kubectl apply -f redis-deployment.yaml
+    kubectl apply -f clusterIP-service.yaml
+    kubectl apply -f config-map.yaml
+    kubectl apply -f python-deployment.yaml
+    kubectl apply -f loadBalancer-service.yaml
