@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: python-app-container
-        image: salmarefaie29/app-final-project-devops:v1.0
+        image: salmarefaie29/app-task:v1.0
         ports:
         - containerPort: 8000
         envFrom:
